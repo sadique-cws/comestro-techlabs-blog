@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import DbConnect from "./DbConnect";
-import CourseModel from "./CourseModel";
+import Course from "./Course";
 import {join} from "path";
 import {writeFile} from "fs/promises";
 
@@ -27,7 +27,7 @@ export const handleCourseInsertion = async (formData) => {
             image: image.name
         }
 
-        const course = await CourseModel.create(data);
+        const course = await Course.create(data);
         redirect("/admin/courses/manage");
     }
     catch(e){

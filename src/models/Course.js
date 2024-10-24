@@ -11,4 +11,4 @@ const CourseSchema = mongoose.Schema({
 })
 
 
-export default  mongoose.models.Course || mongoose.model("Course",CourseSchema);
+export default mongoose.models.Course || mongoose.model("Course",CourseSchema);

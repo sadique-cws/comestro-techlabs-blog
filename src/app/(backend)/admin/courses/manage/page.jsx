@@ -1,4 +1,4 @@
-import CourseModel from "@/models/CourseModel";
+import CourseModel from "@/models/Course";
 import DbConnect from "@/models/DbConnect"
 import Link from "next/link"
 
